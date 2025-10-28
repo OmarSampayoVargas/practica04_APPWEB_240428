@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>formularios de solicitud de nueva cancion</h2>
+    <hr>
+
+    <form>
+        <fieldset>
+            <legend>Datos de la cancion</legend>
+            <br>
+            <label for="nombreCancion">Nombre de la cancion</label>
+            <input type="text" name="nombreCancion" id="nombreCancion" size="50" required 
+            placeholder="por favor ingrese el nombre de la cancion"></input>
+            <br><br>
+            <label for="autoresCancion">Autor (es)</label>
+            <input type="text" name="autoresCancion" id="autoresCancion" size="80"
+            placeholder="ingresa al autor o autores por su nombre completo y separados por una coma (,)" required>
+            <br><br>
+            <label for="InterpreteCancion">Interprete</label>
+            <input type="text" name="InterpreteCancion" id="InterpreteCancion" size="50" 
+            required placeholder="solista o grupo que inteprete la cancion">
+            <br>
+            <br>
+            <label for="generoMusical">Escoje el (los) genero(s) al que pertenece</label>
+            <select multiple>
+                <option>Clasica</option>
+                <option>Electronica</option>
+                <option>HipHop</option>
+                <option>Instrumental</option>
+                <option>jazz</option>
+                <optgroup label="Latina">
+                    <option>Salsa</option>
+                    <option>bachata</option>
+                    <option>Reggae</option>
+                    <option>Reggaeton</option>
+                    <option>Trap</option>
+                </optgroup>
+                <optgroup label="Regional">
+                    <option>Corridos</option>
+                    <option>Cumbia</option>
+                    <option>Ranchera</option>
+                    <option>huapango</option>
+                </optgroup>
+                <optgroup label="Rock">
+                    <option>Alternativo</option>
+                    <option>Brintpop</option>
+                    <option>Grunge</option>
+                    <option>Heavy metal</option>
+                    <option>Progresivo</option>
+                    <option>Punk</option>
+                </optgroup>
+            </select >
+            <br>
+            <br>
+            <label for="contenidoSugestivo">contenido sugestivo</label>
+            <input type="checkbox" id="contenidoSugestivo" name="contenidoSugestivo">
+            <hr>
+            <h3>Letra de la cancion</h3>
+            <textarea cols="150" rows="18" style=" resize:none ; text-align: center;"></textarea>
+            <h3>Multimedia</h3>
+            <label for="audioCancion"></label>
+            <input type="file" id="audioCancion" name="audioCancion" accept="mp3, wav, midi, acc, wna">
+            <br>
+            <br>
+            <label for="videoCancion"></label>
+            <input type="file" id="videoCancion" name="videoCancion"
+            accept="mp4, awl, web,m, nov, nkv, flv">
+            <br>
+            <br>
+            <label for="portadaCancion"></label>
+            <input type="file" id="portadaCancion" name="portadaCancion" accept=".jpg, .jpeg, .bmp, .png">
+            <br>
+            <br>
+            <input type="submit" value="Registrar cancion">
+
+        </fieldset>
+    </form>
+
+</body>
+</html>
